@@ -31,7 +31,7 @@ Each coding agent used to want its own file (`CLAUDE.md`, `.cursorrules`, `GEMIN
 
    ## Rules
    ```
-   Ideas: the two commands from Step 00; the 6 classes and what each does; rules like test-first, Java 21, no new dependencies without asking, explicit lambdas (no method references).
+   Ideas: the two commands from Step 00; the 7 classes and what each does; rules like test-first, Java 21, no new dependencies without asking, explicit lambdas (no method references).
 2. Start a **new** `claude` session.
 3. Run `/memory` and `/context`. Is `AGENTS.md` listed?
 4. Ask the same question as Step 00: *"How do I run the tests and the app, and what are the coding rules?"* Count the tool calls again.

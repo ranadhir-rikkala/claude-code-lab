@@ -19,7 +19,7 @@ Why this use case:
 
 | Reason | What it gives you |
 |---|---|
-| Small: 6 classes, 9 tests | You can hold the whole project in your head |
+| Small: 7 classes, 9 tests | You can hold the whole project in your head |
 | Has a build, tests, a CLI and sample data | Every Claude Code feature gets a real job, not a toy one |
 | Has a **planted bug** | Subagents, hooks and skills fix something real (find it in Step 00) |
 | Ops domain | Close to agent remediation work |
