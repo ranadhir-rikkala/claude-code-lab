@@ -1,0 +1,13 @@
+# service|SEVERITY|message
+payments|CRITICAL|DB timeout
+payments|WARN|db timeout
+payments|CRITICAL|DB timeout
+search|WARN|High latency on /query
+search|WARN|High latency on /query
+search|WARN|High latency on /query
+auth|INFO|Token refresh spike
+auth|INFO|Token refresh spike
+checkout|WARN|Queue depth above 1000
+payments|WARN|DB Timeout
+inventory|CRITICAL|Disk 95% full
+search|INFO|Cache warmup complete
