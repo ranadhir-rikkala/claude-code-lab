@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mvn -q test:*)",
+      "Bash(./scripts/run.sh:*)"
+    ],
+    "deny": [
+      "Read(./secrets/**)"
+    ]
+  }
+}
