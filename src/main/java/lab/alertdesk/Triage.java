@@ -5,7 +5,7 @@ import java.util.List;
 
 public final class Triage {
 
-    public List<AlertGroup> rank(List<AlertGroup> groups) {
+    public List<AlertGroup> prioritize(List<AlertGroup> groups) {
         List<AlertGroup> ranked = new ArrayList<>(groups);
         ranked.sort((a, b) -> {
             int bySeverity = b.highest().compareTo(a.highest());
@@ -15,5 +15,15 @@ public final class Triage {
             return Integer.compare(b.count(), a.count());
         });
         return ranked;
+    }
+
+    public List<AlertGroup> atLeast(List<AlertGroup> groups, Severity min) {
+        List<AlertGroup> kept = new ArrayList<>();
+        for (AlertGroup group : groups) {
+            if (group.highest().compareTo(min) >= 0) {
+                kept.add(group);
+            }
+        }
+        return kept;
     }
 }

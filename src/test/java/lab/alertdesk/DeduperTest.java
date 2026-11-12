@@ -36,4 +36,15 @@ class DeduperTest {
 
         assertEquals(2, groups.size());
     }
+
+    @Test
+    void groupsMessagesDifferingOnlyInCase() {
+        List<AlertGroup> groups = deduper.group(List.of(
+                new Alert("payments", Severity.WARN, "DB timeout"),
+                new Alert("payments", Severity.WARN, "db timeout"),
+                new Alert("payments", Severity.WARN, "DB Timeout")));
+
+        assertEquals(1, groups.size());
+        assertEquals(3, groups.get(0).count());
+    }
 }
